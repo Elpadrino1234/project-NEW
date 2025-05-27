@@ -1,0 +1,88 @@
+/* Category specific colors */
+.civil-work .service-icon {
+    color: #8e44ad;
+}
+
+.solar-rooftop .service-icon {
+    color: #f39c12;
+}
+
+.consultancy .service-icon {
+    color: #27ae60;
+}
+
+/* Process steps */
+.process-step {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 auto 15px;
+    font-size: 1.2rem;
+}
+
+/* Clients grid */
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.client-logo img {
+    max-height: 80px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.client-logo:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+/* Testimonials */
+.testimonial-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.testimonial-card p::before,
+.testimonial-card p::after {
+    content: '"';
+    font-size: 2rem;
+    color: var(--primary-color);
+    opacity: 0.3;
+}
+
+.client-info {
+    text-align: right;
+}
+
+.client-info strong {
+    display: block;
+    color: var(--dark-color);
+}
+
+.client-info span {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}

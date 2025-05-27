@@ -133,3 +133,22 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', animateOnScroll);
     animateOnScroll(); // Run once on page load
 });
+document.addEventListener('DOMContentLoaded', function() {
+    // ... existing code ...
+    
+    // Dropdown menu functionality for mobile
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const link = dropdown.querySelector('a');
+        
+        link.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            }
+        });
+    });
+    
+    // ... rest of your existing code ...
+});
